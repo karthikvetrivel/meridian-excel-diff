@@ -35,6 +35,8 @@ After:   =B9*0.95
 
 Double-click any changed cell to see the full detail popover with old/new values, formula token diff, and number format changes.
 
+![Cell Detail Popover](docs/screenshots/modal.png)
+
 ### AI-Powered Change Summary
 
 One click generates a plain-English summary of what changed between versions — written for a finance professional, not a developer.
