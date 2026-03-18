@@ -1,0 +1,108 @@
+.panel {
+  padding: 12px 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.header {
+  padding: 0 12px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+}
+
+.addr {
+  font-family: 'Geist Mono', 'DM Mono', monospace;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.source {
+  padding: 6px 12px;
+  margin: 0 8px 8px;
+  background: var(--bg-elevated);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sourceAddr {
+  font-family: 'Geist Mono', 'DM Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--mod-text);
+}
+
+.sourceChange {
+  font-family: 'Geist Mono', 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.section {
+  margin-top: 4px;
+}
+
+.sectionLabel {
+  padding: 4px 12px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-disabled);
+  text-transform: uppercase;
+}
+
+.depRow {
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.depRow:hover {
+  background: var(--bg-elevated);
+}
+
+.arrow {
+  color: var(--brand);
+  font-size: 12px;
+  width: 14px;
+  flex-shrink: 0;
+}
+
+.arrowIndirect {
+  color: var(--text-tertiary);
+  font-size: 12px;
+  width: 14px;
+  flex-shrink: 0;
+}
+
+.depAddr {
+  font-family: 'Geist Mono', 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-primary);
+  min-width: 40px;
+}
+
+.depDelta {
+  font-family: 'Geist Mono', 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text-tertiary);
+  margin-left: auto;
+}
+
+.empty {
+  padding: 16px 12px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.emptyHint {
+  display: block;
+  font-size: 10px;
+  color: var(--text-disabled);
+  margin-top: 4px;
+}

@@ -1,0 +1,65 @@
+@import './reset.css';
+@import './tokens.css';
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: 'Geist', 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: var(--text-md);
+}
+
+code,
+pre,
+.mono {
+  font-family: 'Geist Mono', 'DM Mono', 'Consolas', monospace;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(22, 199, 132, 0.25);
+  color: var(--text-primary);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-hover);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) transparent;
+}
+
+@media (max-width: 1023px) {
+  #root > * {
+    display: none !important;
+  }
+  #root::before {
+    content: 'ExcelDiff is designed for desktop screens. Please use a device with at least 1024px width.';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 40px;
+    text-align: center;
+    font-size: var(--text-md);
+    color: var(--text-secondary);
+  }
+}

@@ -1,0 +1,89 @@
+:root {
+  /* ── BASE BACKGROUNDS — Deep navy ── */
+  --bg-base: #0B1120;
+  --bg-raised: #0F1729;
+  --bg-elevated: #131E33;
+  --bg-overlay: #172240;
+  --bg-input: #0D1628;
+
+  /* ── BORDERS — Cool blue-tinted ── */
+  --border-subtle: rgba(148, 180, 230, 0.07);
+  --border-default: rgba(148, 180, 230, 0.12);
+  --border-strong: rgba(148, 180, 230, 0.22);
+  --border-brand: rgba(22, 199, 132, 0.30);
+
+  /* ── TEXT ── */
+  --text-primary: #F0F4F8;
+  --text-secondary: rgba(224, 232, 244, 0.72);
+  --text-tertiary: rgba(180, 200, 230, 0.45);
+  --text-disabled: rgba(150, 175, 210, 0.25);
+  --text-mono: #C8D8F0;
+
+  /* ── BRAND GREEN ── */
+  --brand: #16C784;
+  --brand-hover: #12B374;
+  --brand-dim: rgba(22, 199, 132, 0.10);
+  --brand-border: rgba(22, 199, 132, 0.28);
+
+  /* ── FILE B ACCENT ── */
+  --accent-b: #7C9EFF;
+  --accent-b-dim: rgba(124, 158, 255, 0.10);
+  --accent-b-border: rgba(124, 158, 255, 0.28);
+
+  /* ── DIFF SEMANTIC ── */
+  --add-bg: rgba(22, 199, 132, 0.06);
+  --add-border: rgba(22, 199, 132, 0.32);
+  --add-text: #16C784;
+  --add-gutter: rgba(22, 199, 132, 0.14);
+
+  --rem-bg: rgba(255, 80, 80, 0.06);
+  --rem-border: rgba(255, 80, 80, 0.28);
+  --rem-text: #FF6B6B;
+  --rem-gutter: rgba(255, 80, 80, 0.13);
+
+  --mod-bg: rgba(245, 166, 35, 0.05);
+  --mod-border: rgba(245, 166, 35, 0.26);
+  --mod-text: #F5A623;
+  --mod-gutter: rgba(245, 166, 35, 0.12);
+
+  --same-text: rgba(180, 200, 230, 0.28);
+
+  /* ── SHADOWS ── */
+  --shadow-sm: 0 1px 4px rgba(8, 15, 35, 0.5);
+  --shadow-md: 0 4px 20px rgba(8, 15, 35, 0.65);
+  --shadow-lg: 0 12px 48px rgba(8, 15, 35, 0.75);
+  --shadow-card: 0 0 0 1px rgba(148, 180, 230, 0.08), 0 4px 24px rgba(8, 15, 35, 0.6);
+
+  /* ── SCROLLBARS ── */
+  --scrollbar-thumb: rgba(148, 180, 230, 0.15);
+  --scrollbar-hover: rgba(148, 180, 230, 0.25);
+
+  /* ── SPACING (4px base) ── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* ── BORDER RADIUS ── */
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 10px;
+  --r-xl: 14px;
+  --r-full: 9999px;
+
+  /* ── TYPOGRAPHY SIZES ── */
+  --text-hero: 52px;
+  --text-xl: 28px;
+  --text-lg: 18px;
+  --text-md: 15px;
+  --text-sm: 13px;
+  --text-xs: 11px;
+  --text-2xs: 10px;
+  --mono-md: 13px;
+  --mono-sm: 12px;
+}

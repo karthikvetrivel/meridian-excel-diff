@@ -1,0 +1,19 @@
+.container {
+  font-family: 'Geist Mono', 'DM Mono', monospace;
+  font-size: 13px;
+  display: inline;
+}
+
+.same {
+  color: var(--text-mono);
+}
+
+.removed {
+  color: var(--rem-text);
+  text-decoration: line-through;
+}
+
+.added {
+  color: var(--brand);
+  text-decoration: underline;
+}

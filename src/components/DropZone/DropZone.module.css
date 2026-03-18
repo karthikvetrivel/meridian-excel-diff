@@ -1,0 +1,106 @@
+.zone {
+  border: 1.5px dashed var(--border-default);
+  border-radius: var(--r-xl);
+  background: var(--bg-raised);
+  padding: 44px 28px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 180ms ease, background 180ms ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.zone:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.dragA {
+  border-color: var(--brand);
+  background: var(--brand-dim);
+}
+
+.dragB {
+  border-color: var(--accent-b);
+  background: var(--accent-b-dim);
+}
+
+.hasFileA {
+  border-style: solid;
+  border-color: var(--brand);
+}
+
+.hasFileB {
+  border-style: solid;
+  border-color: var(--accent-b);
+}
+
+.shake {
+  animation: shake 300ms ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.label {
+  font-size: var(--text-2xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-tertiary);
+}
+
+.primary {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+}
+
+.secondary {
+  font-size: var(--text-xs);
+  color: var(--text-disabled);
+}
+
+.fileNameA {
+  font-family: 'Geist Mono', 'DM Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--brand);
+  word-break: break-all;
+}
+
+.fileNameB {
+  font-family: 'Geist Mono', 'DM Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-b);
+  word-break: break-all;
+}
+
+.hint {
+  font-size: var(--text-xs);
+  color: var(--text-disabled);
+  opacity: 0;
+  transition: opacity 150ms ease;
+}
+
+.zone:hover .hint {
+  opacity: 1;
+}
+
+.errorText {
+  font-size: var(--text-sm);
+  color: var(--rem-text);
+}
