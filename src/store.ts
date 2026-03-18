@@ -18,7 +18,6 @@ interface AppStore {
 
   filters: FilterState;
   searchQuery: string;
-  sidebarCollapsed: boolean;
   errors: string[];
 
   setFileA: (file: File | null) => void;
@@ -32,9 +31,6 @@ interface AppStore {
   setSelectedRow: (index: number | null) => void;
   setInspectedCell: (cell: { sheetName: string; diff: CellDiff } | null) => void;
   setAISummary: (summary: { status: 'idle' | 'loading' | 'done' | 'error'; text: string | null }) => void;
-  toggleFilter: (key: keyof FilterState) => void;
-  setSearchQuery: (query: string) => void;
-  toggleSidebar: () => void;
   addError: (message: string) => void;
   dismissError: (index: number) => void;
 }
@@ -61,7 +57,6 @@ export const useAppStore = create<AppStore>((set) => ({
   aiSummary: { status: 'idle', text: null },
   filters: { ...defaultFilters },
   searchQuery: '',
-  sidebarCollapsed: false,
   errors: [],
 
   setFileA: (file) => set({ fileA: file }),
@@ -108,14 +103,6 @@ export const useAppStore = create<AppStore>((set) => ({
   setSelectedRow: (index) => set({ selectedRowIndex: index }),
   setInspectedCell: (cell) => set({ inspectedCell: cell }),
   setAISummary: (summary) => set({ aiSummary: summary }),
-
-  toggleFilter: (key) =>
-    set((state) => ({
-      filters: { ...state.filters, [key]: !state.filters[key] },
-    })),
-
-  setSearchQuery: (query) => set({ searchQuery: query }),
-  toggleSidebar: () => set((state) => ({ sidebarCollapsed: !state.sidebarCollapsed })),
 
   addError: (message) =>
     set((state) => ({ errors: [...state.errors, message] })),

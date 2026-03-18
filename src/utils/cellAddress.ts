@@ -20,10 +20,6 @@ export function indexToCol(index: number): string {
 
 const CELL_ADDR_RE = /^([A-Z]+)(\d+)$/i;
 
-export function isValidCellAddress(addr: string): boolean {
-  return CELL_ADDR_RE.test(addr);
-}
-
 export function parseAddress(addr: string): { col: number; row: number } {
   const match = addr.match(CELL_ADDR_RE);
   if (!match) throw new Error(`Invalid cell address: ${addr}`);
